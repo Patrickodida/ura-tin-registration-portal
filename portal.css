@@ -160,3 +160,26 @@ input:invalid:not(:placeholder-shown) {
     color: #5A6672;
     margin-top: 4px;
 }
+
+/* Gender radio - Inner group */
+.gender-group {
+    border: none;
+    padding: 0;
+}
+
+.gender-group legend {
+    font-size: 1rem;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.gender-option {
+    display: flex;
+    gap: 25px;
+}
+
+.gender-option label {
+    font-weight: normal;
+    color: #1F2933;
+    margin-left: 6px;
+}
