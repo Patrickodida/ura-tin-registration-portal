@@ -98,3 +98,65 @@ form {
     outline: 3px solid #FFB81C;
     outline-offset: 2px;
 }
+
+/* Fieldset */
+fieldset {
+    border: 2px solid #003366;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+legend {
+    color: #003366;
+    font-weight: bold;
+    font-size: 1.15rem;
+    padding: 0 10px;
+}
+
+/* Field */
+.field {
+    margin-bottom: 18px;
+}
+
+.field > label {
+    display: block;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 5px;
+}
+
+.required::after {
+    content: " *";
+    color: #C62828;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid #B8C4D2;
+    border-radius: 6px;
+    background: #FFFFFF;
+}
+
+input:focus,
+select:focus {
+    outline: 3px solid #FFB81C;
+    border-color: #003366;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border-color: #C62828;
+}
+
+.hint {
+    display: block;
+    font-size: 0.85rem;
+    color: #5A6672;
+    margin-top: 4px;
+}
