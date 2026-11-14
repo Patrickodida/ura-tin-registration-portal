@@ -196,3 +196,21 @@ form:has(#type-business:checked) #section-a {
 form:has(#type-business:checked) #section-b {
     display: block;
 }
+
+/* Next Button */
+.btn-next {
+    display: block;
+    margin: 25px 0 0 auto;
+    background: #003366;
+    color: #FFFFFF;
+    font-size: 1.05rem;
+    font-weight: bold;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-next:hover {
+    background: #0A4A85;
+}
