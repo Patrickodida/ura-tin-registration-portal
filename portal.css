@@ -183,3 +183,16 @@ input:invalid:not(:placeholder-shown) {
     color: #1F2933;
     margin-left: 6px;
 }
+
+/* Business Placeholder - showed only when selected */
+#section-b {
+    display: none;
+}
+
+form:has(#type-business:checked) #section-a {
+    display: none;
+}
+
+form:has(#type-business:checked) #section-b {
+    display: block;
+}
