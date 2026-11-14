@@ -214,3 +214,11 @@ form:has(#type-business:checked) #section-b {
 .btn-next:hover {
     background: #0A4A85;
 }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.85rem;
+    color: #5A6672;
+}
