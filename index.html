@@ -14,5 +14,90 @@
 
     <div class="info-bar">Have your national ID ready before starting.</div>
     
+    <main>
+        <form action="#" method="post">
+
+            <div class="type-toggle">
+                <input type="radio" id="type-individual" name="taxpayer-type" value="individual" checked>
+                <label for="type-individual">Individual Taxpayer</label>
+    
+                <input type="radio" id="type-business" name="taxpayer-type" value="business">
+                <label for="type-business">Business Entity</label>
+            </div>
+    
+            <!-- Section A -->
+             <fieldset id="section-a">
+                <legend>Section A: Individual Taxpayer Details</legend>
+    
+                <div class="field">
+                    <label for="fullname" class="required">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+    
+                <div class="field">
+                    <label for="nin" class="required">NIN</label>
+                    <input type="text" id="nin" name="nin" required maxlength="14"
+                    pattern="[A-Z]{2}[A-Z0-9]{12}" title="14 characters: two capital letters followed by 12 capital letters or digits">
+                    <small class="hint">14 characters: 2 capital letters followed by 12 letters or digits.</small>
+                </div>
+    
+                <div class="field">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+    
+                <div class="field">
+                    <fieldset class="gender-group">
+                        <legend>Gender</legend>
+                        <div class="gender-option">
+                            <div>
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+    
+                <div class="field">
+                    <label for="district">District</label>
+                    <select name="district" id="district">
+                        <option value="#">-- Select district --</option>
+                        <option value="kampala">Kampala</option>
+                        <option value="wakiso">Wakiso</option>
+                        <option value="mukono">Mukono</option>
+                        <option value="jinja">Jinja</option>
+                        <option value="gulu">Gulu</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="phone" class="required">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+    
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+    
+                <div class="field">
+                    <label for="national-id">Upload national ID</label>
+                    <input type="file" id="national-id" name="national-id" accept=".jpg, .pdf">
+                    <small class="hint">Accepted formats: .jpg or .pdf</small>
+                </div>
+    
+                <button type="submit" class="btn-next">Next</button>
+    
+                <!-- Placeholder shown when Business Entity is Selected -->
+                 <fieldset id="section-b">
+                    <legend>Section B: Business Entity Details</legend>
+                    <p>The business registration form will be added in the next phase.</p>
+                 </fieldset>
+             </fieldset>
+        </form>
+    </main>
 </body>
 </html> 
