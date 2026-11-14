@@ -222,3 +222,15 @@ footer {
     font-size: 0.85rem;
     color: #5A6672;
 }
+
+/* Small Screens */
+@media (max-width: 600px) {
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .type-toggle {
+        flex-direction: column;
+    }
+}
